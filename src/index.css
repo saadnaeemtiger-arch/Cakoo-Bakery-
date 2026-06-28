@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  
+  --color-brand-cream: #FDFCF0;
+  --color-brand-cream-light: #FEFEF9;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-hover: #C59E27;
+  --color-brand-brown: #4A3728;
+  --color-brand-brown-light: #6B5A4D;
+  --color-brand-brown-dark: #2D1E15;
+  --color-brand-pink: #FADADD;
+  --color-brand-pink-dark: #E2B9BD;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Elegant Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFCF0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E6D5C3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6B5A4D;
+}
+
+/* Smooth fade-in utility classes if needed */
+.fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
